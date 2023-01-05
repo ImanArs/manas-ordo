@@ -1,0 +1,29 @@
+.archive {
+    p {
+        @apply text-[14px];
+        @apply sm:text-[16px];
+        @apply md:text-[13px];
+        @apply lg:text-[17px];
+        foo: bar;
+    }
+    .Swiper {
+        @apply w-[280px] mt-[50px] m-auto;
+        @apply sm:w-[600px];
+        @apply md:w-[500px];
+        @apply lg:w-[600px];
+        foo: bar;
+        .slide {
+            @apply m-auto;
+            @apply w-[280px];
+            @apply sm:w-[450px];
+            @apply lg:w-[500px];
+            foo: bar;
+            img {
+                @apply w-[300px];
+                @apply sm:w-[450px];
+                @apply lg:w-[500px];
+                foo: bar;
+            }
+        }
+    }
+}
