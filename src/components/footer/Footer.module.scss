@@ -6,10 +6,18 @@
     align-items: center;
     padding: 10px;
     color: #fff;
+    font-size: 13px;
+    &_logo {
+        img {
+
+            // width: 100px;
+        }
+    }
     div {
         @apply m-3;
         foo: bar;
     }
+    
     img {
         width: 46px;
     }
@@ -18,9 +26,28 @@
         display: flex;
         justify-content: space-evenly;
         img {
-            width: 46px;
+            width: 50px;
         }
     }
+    
+}
+.footer_media {
+    p{
+
+    }
+    ul{
+        li{
+            margin: 10px 0;
+            a {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+    
 }
 .commerce {
     margin: 20px;

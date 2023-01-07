@@ -17,12 +17,25 @@ const Main = () => {
 
   const { t } = useTranslation()
 	const [info, setInfo] = useState()
+	const [juxtapose, setJuxtapose] = useState(220)
 
 	useEffect(() => {
 		if (localStorage.getItem('i18nextLng') !== '') {
 			setInfo(localStorage.getItem('i18nextLng'))
 		}
 	}, [info])
+
+
+  const juxtaposeF = () => {
+    if (window.innerWidth > 640) {
+      setJuxtapose(500)
+    } else {
+      setJuxtapose(250)
+    }
+  }
+  useEffect(() => {
+    juxtaposeF()
+  })
 
   return (
     <>
@@ -48,7 +61,7 @@ const Main = () => {
                 <div className={styles.main_description}>
                   <p>{t("mainPage.desc")}</p>
                   <div className={styles.video}>
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/9rXoILcAPGA" title="Интервью директора археологического музея" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/CN0Ummnnw6Q" title="Manas Ordo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
                   </div>
                 </div>
               </div>
@@ -57,9 +70,6 @@ const Main = () => {
         </div>
         {/* complex story */}
         <div className={styles.complex}>
-          <div className={styles.complex_right}>
-            <p>1334</p>
-          </div>
           <div className={styles.complex_left}>
             <h2>{t("mainPage.title")}</h2>
             <p>{t("mainPage.desc2")}</p>
@@ -78,18 +88,18 @@ const Main = () => {
         {/* parking */}
         <div className={styles.parking}>
           <div className={styles.parking_left}>
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={1}
-            className={styles.Swiper}
-            modules={Navigation}
-          >
-            {parkingData.map((item, index) => (
-              <SwiperSlide key={index} className={styles.slide}>
-                <img src={item} alt="archive" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              className={styles.Swiper}
+              modules={Navigation}
+            >
+              {parkingData.map((item, index) => (
+                <SwiperSlide key={index} className={styles.slide}>
+                  <img src={item} alt="archive" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
           <div className={styles.parking_right}>
             <h2>{t("mainPage.parking.title")}</h2>
@@ -141,7 +151,8 @@ const Main = () => {
           <p>{t("mainPage.kumbez.desc")}</p>
           <img src="/images/main/kumbez.png" alt="" />
           <p>{t("mainPage.kumbez.desc2")}</p>
-          <img src="/images/main/kumbez2.png" alt="" />
+          <iframe frameBorder="0" className="juxtapose" width="100%" height={juxtapose} src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1f9eb3f8-8daf-11ed-b5bd-6595d9b17862"></iframe>
+          {/* <img src="/images/main/kumbez2.png" alt="" /> */}
           <p>{t("mainPage.kumbez.desc3")}</p>
           <div className={styles.Kumbez_Img}>
             <img src="/images/main/kumbez3.png" alt="" />
@@ -181,9 +192,8 @@ const Main = () => {
         {/* museum Epos Epic */}
         <div className={styles.museumEpos}>
           <h2>{t("mainPage.museumOfTheEpic.title")}</h2>
-          <img src="/images/main/museumEpos.png" alt="" />
-          <p>{t("mainPage.museumOfTheEpic.desc")}</p>
           <img src="/images/main/museumEpos2.png" alt="" />
+          <p>{t("mainPage.museumOfTheEpic.desc")}</p>
         </div>
         {/* tulookana */}
         <div className={styles.tulookana}>
@@ -200,6 +210,19 @@ const Main = () => {
           </div>
         </div>
         {/* hippodrom */}
+        {/* hippodrom */}
+        {/* price */}
+        <div className={styles.price}>
+          <h2>{t("mainPage.price.title")}</h2>
+          <div>
+            <p>{t("mainPage.price.desc")}</p>
+            <p>{t("mainPage.price.pricing")}</p>
+            <p>{t("mainPage.price.pricing2")}</p>
+            <p>{t("mainPage.price.pricing3")}</p>
+            <p>{t("mainPage.price.pricing4")}</p>
+            <p>{t("mainPage.price.pricing5")}</p>
+          </div>
+        </div>
       </div>
     </>
   );

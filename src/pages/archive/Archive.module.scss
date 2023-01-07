@@ -26,4 +26,36 @@
             }
         }
     }
+    &_library {
+
+        .library_Img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+.univer {
+    max-width: 1200px;
+    margin: 0 auto;
+    &_Wrapper {
+        display: flex;
+        justify-content: space-between;
+        div {
+            max-width: 400px;
+        }
+        .anchor {
+            margin-top: 40px;
+            display: flex;
+            a {
+                border: 1px solid #000;
+                padding: 10px;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    border: 1px solid #CB3434;
+                    color: #CB3434;
+                }
+            }
+        }
+    }
 }

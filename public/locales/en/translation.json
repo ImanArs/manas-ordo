@@ -1,7 +1,7 @@
 {
     "navigation": {
       "complex": "Complex",
-      "archMuseum": "Archaeological museums",
+      "archMuseum": "Archaeological museum",
       "archive": "Archive",
       "gallery": "Gallery",
       "contacts": "Contacts"
@@ -37,7 +37,7 @@
         "desc2": "The 'Alley of Honorable Pilgrims' is supplemented with new rows from year to year. Such an honor is presented to the distinguished guests who have made a feasible contribution to the development of the Manas Ordo National Complex."
       },
       "warriors": {
-        "title": "Manas The Great and 40 Warriors",
+        "title": "Manas The Great and forty Warriors",
         "desc": "The architectural and sculptural ensemble Magnanimous Manas and Forty Warriors consists of 45 figures. In the very center, a 6-meter monument to Manas the Magnanimous stands on a pedestal of 16 meters 30 cm. The bronze images of the wise Bakai, Kanykey apa, Akbalty and Koshoy of the closest companions are put in one composition. The bravest three heroes, the leaders of the centurions Almambet, Chubak, Syrgak complement the ensemble with another composition."
       },
       "kumbez": {
@@ -84,12 +84,28 @@
       "wellspring": {
         "title": "Kanykei and Aichurok’s wellsprings",
         "desc": "Below 1.5 km of the national complex are the springs of the mothers of Kanykey and Aichurek. These springs have been considered holy since ancient times. Pure spring water has special properties that have been tested for centuries. Springs are protected, improved and landscaped with a folk complex."
+      },
+      "price": {
+        "title": "PAYMENT FOR SERVICES ON THE TERRITORY OF THE KYRGYZ NATIONAL COMPLEX MANAS ORDO",
+        "desc": "Entrance ticket at the ticket office:",
+        "pricing": "For adults - 45 soms",
+        "pricing2": "For children - 10 soms",
+        "pricing3": "Service of tulookana - 700 soms",
+        "pricing4": "Parking of cars - 10 soms",
+        "pricing5": "Manas Ordo Guest House for one person - 100 soms (1st floor), 300-500 soms (2nd floor) Conference hall and guided tours by appointment "
       }
     },
 
     "archive": {
       "title": "Archive",
-      "desc": "Before the advent of the Internet, the role of newspapers in the life of society was huge. Newspapers, popular science and fiction were the main means of storing and transmitting from generation to generation all the achievements of science and culture. For people of all ages, magazines and newspapers serve as a source of knowledge, help to learn and appreciate life, understand the laws of social relations and natural phenomena.That is why the old original copies are kept in the archives of the Talas Regional Library. The archive is a place of connection of the past, present and future. Thanks to the archive, the connection of time, the history of the development of culture and social life is preserved. This is the significance of the archive as a source of cultural and historical information."
+      "desc": "Before the advent of the Internet, the role of newspapers in the life of society was huge. Newspapers, popular science and fiction were the main means of storing and transmitting from generation to generation all the achievements of science and culture. For people of all ages, magazines and newspapers serve as a source of knowledge, help to learn and appreciate life, understand the laws of social relations and natural phenomena.That is why the old original copies are kept in the archives of the Talas Regional Library. The archive is a place of connection of the past, present and future. Thanks to the archive, the connection of time, the history of the development of culture and social life is preserved. This is the significance of the archive as a source of cultural and historical information.",
+      "library": {
+        "title": "Talas Regional Library named by Aman Toktogulov"
+      },
+      "univer": {
+        "title": "Talas State University",
+        "desc": "Dissertation on the topic CHRONOTOPOLOGICAL STRATIFICATION OF THE VOCABULARY OF THE EPIC 'MANAS'"
+      }
     },
     "archeological": {
       "title": "Museum of Archeology and Ethnography",

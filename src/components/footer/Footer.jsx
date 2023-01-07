@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className={styles.footer}>
-        <div>
+        <div className={styles.footer_logo}>
           <img src="/logo.png" alt="" />
         </div>
         <div>
@@ -23,23 +23,17 @@ const Footer = () => {
           <p>{t("footer.address")}</p>
           <ul>
             <li>
-              <a href="tel:+996700655901">0700-655-901</a>
-            </li>
-            <li>
               <a href="tel:+996772655901">0772-655-901</a>
             </li>
             <li>
               <a href="tel:+996552655901 ">0552-655-901</a>
             </li>
             <li>
-              <a href="tel:+996771550560">0771-550-560</a>
-            </li>
-            <li>
               <a href="tel:+996700550560 ">0700-550-560</a>
             </li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footer_media}>
           <p>{t("footer.socMedia")}</p>
           <ul>
             <li>
@@ -48,8 +42,11 @@ const Footer = () => {
                 rel="noreferrer"
                 href="https://fb.watch/hqEA2vbFzB/?mibextid=RUbZ1f"
               >
-                facebook
+                <img src="/icons/facebook.png" alt="" />
               </a>
+            </li>
+            <li>
+              <a href="mailto:manasordo@gmail.com">manasordo@gmail.com</a>
             </li>
           </ul>
         </div>

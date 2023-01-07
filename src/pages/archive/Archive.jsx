@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import { ArchiveData } from '../../common/archiveData';
+import { libraryData } from '../../common/libraryData';
 
 
 
@@ -51,6 +52,30 @@ const Archive = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+        <div className={styles.archive_library}>
+          <h2>{t("archive.library.title")}</h2>
+          <div className={styles.library_Img}>
+            {libraryData.map((item, i) => (
+              <img key={i} src={item} alt="archive" />
+            ))}
+          </div>
+        </div>
+        <div className={styles.univer}>
+          <h2>{t("archive.univer.title")}</h2>
+          <div className={styles.univer_Wrapper}>
+            <div>
+              <p>{t("archive.univer.desc")}</p>
+              <div className={styles.anchor}>
+                <a href="http://d.zaix.ru/xcmH.pdf" target="_blank" rel="noreferrer">
+                  посмотреть
+                </a>
+              </div>
+            </div>
+            <div>
+              <img src="/images/liba/diss.jpeg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </>
