@@ -75,7 +75,7 @@
     }
 }
 .complex {
-    @apply block my-[60px]  m-auto;
+    @apply block my-[20px];
     @apply sm:flex sm:justify-between;
     @apply md:block md:w-[500px];
     @apply lg:w-[735px];
@@ -89,16 +89,6 @@
         p {
             @apply md:w-[500px] md:text-[14px];
             @apply lg:w-[735px] lg:text-[13px];
-            foo: bar;
-        }
-    }
-    &_right {
-        @apply text-center w-[300px];
-        @apply sm:w-[100px];
-        @apply md:w-[500px];
-        foo: bar;
-        p {
-            @apply text-right text-[#CB3434] text-[30px];
             foo: bar;
         }
     }
@@ -373,4 +363,10 @@
             }
         }
     }
+}
+.price {
+    @apply md:w-[500px] m-auto;
+    @apply lg:w-[735px];
+    foo: bar;
+    
 }

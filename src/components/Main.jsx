@@ -71,7 +71,7 @@ const Main = () => {
         {/* complex story */}
         <div className={styles.complex}>
           <div className={styles.complex_left}>
-            <h2>{t("mainPage.title")}</h2>
+            {/* <h2>{t("mainPage.title")}</h2> */}
             <p>{t("mainPage.desc2")}</p>
           </div>
         </div>
@@ -151,7 +151,7 @@ const Main = () => {
           <p>{t("mainPage.kumbez.desc")}</p>
           <img src="/images/main/kumbez.png" alt="" />
           <p>{t("mainPage.kumbez.desc2")}</p>
-          <iframe frameBorder="0" className="juxtapose" width="100%" height={juxtapose} src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1f9eb3f8-8daf-11ed-b5bd-6595d9b17862"></iframe>
+          <iframe frameBorder="0" title="archeology" className="juxtapose" width="100%" height={juxtapose} src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1f9eb3f8-8daf-11ed-b5bd-6595d9b17862"></iframe>
           {/* <img src="/images/main/kumbez2.png" alt="" /> */}
           <p>{t("mainPage.kumbez.desc3")}</p>
           <div className={styles.Kumbez_Img}>
