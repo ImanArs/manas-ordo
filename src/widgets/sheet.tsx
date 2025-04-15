@@ -30,7 +30,7 @@ export const Sheet = () => {
             transition={{ duration: 0.1 }}
             className="fixed top-[66px] left-0 h-full w-[200px] z-[1]"
           >
-            <Sidebar type="black" />
+            <Sidebar onChange={() => setIsOpen(!isOpen)} type="black" />
           </motion.div>
         )}
       </AnimatePresence>

@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 
 interface Props {
   type: "black" | "white";
+  onChange?: () => void;
 }
 
 export const Sidebar = (props: Props) => {
-  const { type } = props;
+  const { type, onChange } = props;
   const { t } = useTranslation();
 
   return (
@@ -17,7 +18,7 @@ export const Sidebar = (props: Props) => {
          `}
     >
       <ul className="flex flex-col gap-10 mt-10">
-        <li>
+        <li onClick={onChange}>
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "text-red-500" : "")}
@@ -25,7 +26,7 @@ export const Sidebar = (props: Props) => {
             {t("Complex")}
           </NavLink>
         </li>
-        <li>
+        <li onClick={onChange}>
           <NavLink
             to="/archeology"
             className={({ isActive }) => (isActive ? "text-red-500" : "")}
@@ -33,7 +34,7 @@ export const Sidebar = (props: Props) => {
             {t("Archaeological-museums")}
           </NavLink>
         </li>
-        <li>
+        <li onClick={onChange}>
           <NavLink
             to="/archive"
             className={({ isActive }) => (isActive ? "text-red-500" : "")}
@@ -41,7 +42,7 @@ export const Sidebar = (props: Props) => {
             {t("Archive")}
           </NavLink>
         </li>
-        <li>
+        <li onClick={onChange}>
           <NavLink
             to="/gallery"
             className={({ isActive }) => (isActive ? "text-red-500" : "")}
