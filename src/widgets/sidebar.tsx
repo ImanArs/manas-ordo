@@ -1,18 +1,26 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
-export const Sidebar = () => {
+interface Props {
+  type: "black" | "white";
+}
+
+export const Sidebar = (props: Props) => {
+  const { type } = props;
   const { t } = useTranslation();
 
   return (
-    <nav className="max-w-[200px] w-full px-5 border-r fixed h-full mt-[66px] bg-[#F4F5F0]">
+    <nav
+      className={`max-w-[200px] w-full px-5 border-r border-black fixed h-full 
+        ${type === "white" && "bg-[#F4F5F0] text-black"}
+        ${type === "black" && "bg-[#282828] text-white"}
+         `}
+    >
       <ul className="flex flex-col gap-10 mt-10">
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? "text-red-500" : "text-black"
-            }
+            className={({ isActive }) => (isActive ? "text-red-500" : "")}
           >
             {t("Complex")}
           </NavLink>
@@ -20,36 +28,30 @@ export const Sidebar = () => {
         <li>
           <NavLink
             to="/archeology"
-            className={({ isActive }) =>
-              isActive ? "text-red-500" : "text-black"
-            }
+            className={({ isActive }) => (isActive ? "text-red-500" : "")}
           >
-            Archaeological museums
+            {t("Archaeological-museums")}
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/archive"
-            className={({ isActive }) =>
-              isActive ? "text-red-500" : "text-black"
-            }
+            className={({ isActive }) => (isActive ? "text-red-500" : "")}
           >
-            Archive
+            {t("Archive")}
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/gallery"
-            className={({ isActive }) =>
-              isActive ? "text-red-500" : "text-black"
-            }
+            className={({ isActive }) => (isActive ? "text-red-500" : "")}
           >
-            Gallery
+            {t("Gallery")}
           </NavLink>
         </li>
         <li>
-          <a href="#contacts" className="text-black">
-            contacts
+          <a href="#contacts" className="">
+            {t("contacts")}
           </a>
         </li>
       </ul>

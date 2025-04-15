@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <footer
       id="contacts"
-      className="relative z-[2] bg-[#282828] grid grid-cols-4 p-2.5 items-center justify-center text-center text-white"
+      className="relative z-[10] bg-[#282828] flex flex-col gap-10 md:gap-0 md:grid grid-cols-4 p-2.5 items-center justify-center text-center text-white"
     >
       <img src="/images/logo.png" className="w-[45px] h-[45px]" alt="" />
       <div>

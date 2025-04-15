@@ -12,16 +12,17 @@ function App() {
     <main className="">
       <Header />
       <div className="flex min-h-[100vh] h-full">
-        <Sidebar />
+        <div className="hidden md:block md:mt-[66px]">
+          <Sidebar type="white" />
+        </div>
 
-        <div className="w-[calc(100%-200px)] ml-auto mt-[66px] p-[35px]">
+        <div className="w-full md:w-[calc(100%-200px)] ml-auto mt-[66px] p-[35px]">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/archeology" element={<Archaelog />} />
             <Route path="/archive" element={<Archive />} />
             <Route path="/gallery" element={<Gallery />} />
           </Routes>
-          helo
         </div>
       </div>
       <Footer />

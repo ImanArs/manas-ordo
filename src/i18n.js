@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    supportedLngs: ["en", "ru"],
+    supportedLngs: ["en", "ru", "kg"],
     backend: {
       loadPath: "/locales/{{lng}}/translation.json",
     },
