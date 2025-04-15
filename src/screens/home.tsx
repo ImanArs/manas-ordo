@@ -10,7 +10,7 @@ export const HomePage = () => {
         <img src="/images/home/top2.png" className="w-1/2" alt="" />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 justify-between">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between">
         <img src="/images/home/top3.png" alt="" />
         <div>
           <h2>{t("Manas-Ordo-Complex")}</h2>
@@ -23,7 +23,7 @@ export const HomePage = () => {
         <p>{t("Manas-Ordo-Complex-text-2")}</p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 justify-between">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between">
         <div>
           <h2>{t("Arch")}</h2>
           <p>{t("Arch-text")}</p>
@@ -31,7 +31,7 @@ export const HomePage = () => {
         <img src="/images/home/arch.png" alt="" className="w-[250px]" />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between items-center">
         <img src="/images/home/parking.png" alt="" className="w-[430px]" />
         <div>
           <h2>{t("Parking-Lot")}</h2>
@@ -39,7 +39,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between items-center">
         <div>
           <h2>{t("Khan-Yurt")}</h2>
           <p>{t("Khan-Yurt-text")}</p>
@@ -53,7 +53,7 @@ export const HomePage = () => {
         <img src="/images/home/garden.png" alt="" />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
+      <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
         <div>
           <h2>{t("Alley-of-Honorary")}</h2>
           <p>{t("Alley-of-Honorary-text")}</p>
@@ -61,7 +61,7 @@ export const HomePage = () => {
         <img src="/images/home/alley.png" alt="" className="w-[250px]" />
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row justify-between">
+      <div className="flex flex-col-reverse lg:flex-row justify-between">
         <div className="flex w-[350px] h-[350px] relative [&_img]:w-[150px]">
           <img
             src="/images/home/velik1.png"

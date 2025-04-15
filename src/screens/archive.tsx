@@ -52,7 +52,7 @@ export const Archive = () => {
       <h2 className="text-2xl font-bold">{t("Archive")}</h2>
       <p className="text-gray-600">{t("Archive-text")}</p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {images.map((src, index) => (
           <img
             key={index}
@@ -84,7 +84,7 @@ export const Archive = () => {
                 <img
                   src={images[currentIndex]}
                   alt={`fullscreen-${currentIndex}`}
-                  className="max-h-[80vh] md:max-h-[70vh] max-w-full mx-4 rounded shadow-md"
+                  className="max-h-[80vh] lg:max-h-[70vh] max-w-full mx-4 rounded shadow-md"
                 />
                 <div className="flex gap-20">
                   <button onClick={handlePrev} className="text-white">

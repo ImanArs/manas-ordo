@@ -15,7 +15,7 @@ export const Archaelog = () => {
       </div>
       <p>{t("Museum-of-Archeology-text")}</p>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <img src="/images/archeolog/archeologyMap.png" alt="" />
         <p>{t("Museum-of-Archeology-text-2")}</p>
       </div>
@@ -30,7 +30,7 @@ export const Archaelog = () => {
       </div>
 
       <p>{t("Museum-of-Archeology-text-4")}</p>
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between items-center">
         <img src="/images/archeolog/archeologyBottom.png" alt="" />
         <img src="/images/archeolog/archeologyBottom2.png" alt="" />
       </div>
