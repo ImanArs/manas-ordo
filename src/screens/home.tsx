@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import videoFile from "/video/video.mp4";
 
 export const HomePage = () => {
   const { t } = useTranslation();
@@ -11,7 +12,11 @@ export const HomePage = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-5 justify-between">
-        <img src="/images/home/top3.png" alt="" />
+        {/* <img src="/images/home/top3.png" alt="" /> */}
+        <video controls width="100%" height="100%" className="h-[200px]">
+          <source src={videoFile} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div>
           <h2>{t("Manas-Ordo-Complex")}</h2>
           <p>{t("Manas-Ordo-Complex-text")}</p>
